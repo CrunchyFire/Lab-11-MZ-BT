@@ -1,3 +1,6 @@
+#https://github.com/CrunchyFire/Lab-11-MZ-BT
+#Partner 1: Michael Zhang
+#Partner 2: Benjamin Thanapaisarnkij
 """
 calculator.py
 - Defines functions used to create a simple calculator

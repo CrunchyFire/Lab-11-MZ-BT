@@ -36,6 +36,8 @@ def square_root(a):
     except:
         raise ValueError("a<0")
 def hypotenuse(a, b):
+    if a<0 and b<0:
+        raise ValueError
     try:
         return math.hypot(a, b)
     except:

@@ -47,7 +47,7 @@ def subtract(a, b):
     return a - b
 
 
-def logarithm(a,b):
+def logarithm(a,b=math.e):
     if a<1 or b<0:
         raise ValueError("Logarithm cannot be negative")
     return math.log(a,b)

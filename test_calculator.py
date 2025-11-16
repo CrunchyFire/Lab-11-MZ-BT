@@ -64,8 +64,8 @@ class TestCalculator(unittest.TestCase):
 
     def test_hypotenuse(self): # 3 assertions
         self.assertEqual(5,hypotenuse(3,4))
-        self.assertRaises(ValueError,hypotenuse,-3,4)
-        self.assertRaises(ValueError,hypotenuse,-3,-4)
+        self.assertRaises(ValueError,hypotenuse(-3,4))
+        self.assertRaises(ValueError,hypotenuse(-3,-4))
     #     fill in code
 
     def test_sqrt(self): # 3 assertions

@@ -22,7 +22,7 @@ def mul(a, b):
 
 def div(a, b):
     if a == 0:
-        raise ZeroDivisionError("Cannot divide by zero: 'a' is 0")
+        raise ZeroDivisionError
     return b / a
 
 def exp(a, b):
@@ -39,7 +39,7 @@ def hypotenuse(a, b):
     try:
         return math.hypot(a, b)
     except:
-        raise ValueError("can't have negative nums")
+        raise ValueError
 def add(a, b):
     return a + b
 
@@ -47,7 +47,7 @@ def subtract(a, b):
     return a - b
 
 
-def logarithm(a,b=math.e):
+def logarithm(a,b):
     if a<1 or b<0:
         raise ValueError("Logarithm cannot be negative")
     return math.log(a,b)

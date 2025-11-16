@@ -4,7 +4,34 @@ calculator.py
 
 One function per operation, in order.
 """
+import math
+
+
 # First example
+<<<<<<< HEAD
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+    if b == 0:
+        raise ZeroDivisionError("Cannot divide by zero: 'a' is 0")
+    return a / b
+
+def log(a, b):
+    if a < 0 or b < 0:
+        raise ValueError("Log values cannot be negative")
+    return math.log(a, b)
+
+def exp(a, b):
+    return a ** b
+
+
 import math
 def square_root(a):
     try:
@@ -24,17 +51,13 @@ def subtract(a, b):
 
 def multiply(a, b):
     return a * b
-def divide(a, b):
-    try:
-        c=b/a
-        return c
-    except ZeroDivisionError:
-        return "Division by zero"
+
 def logarithm(a,b):
     if a<0 or b<0:
         raise ValueError("Logarithm cannot be negative")
     return math.log(a,b)
 def exponential(a,b):
     return a**b
+
 
 

@@ -18,9 +18,9 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if b == 0:
+    if a == 0:
         raise ZeroDivisionError("Cannot divide by zero: 'a' is 0")
-    return a / b
+    return b / a
 
 def exp(a, b):
     return a ** b

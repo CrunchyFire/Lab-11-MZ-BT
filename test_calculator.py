@@ -27,9 +27,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(22, mul(-11, -2))
 
     def test_divide(self): # 3 assertions
-        self.assertEqual(15, mul(3, 45))
-        self.assertRaises(ZeroDivisionError, mul(0, 2))
-        self.assertEqual(-2, mul(-3, 6))
+        self.assertEqual(15, div(3, 45))
+        self.assertRaises(ZeroDivisionError, div(0, 2))
+        self.assertEqual(-2, div(-3, 6))
 
     ######## Partner 2
     def test_divide_by_zero(self):
@@ -63,7 +63,7 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(4,hypotenuse(3,4))
+        self.assertEqual(5,hypotenuse(3,4))
         self.assertRaises(ValueError,hypotenuse,-3,4)
         self.assertRaises(ValueError,hypotenuse,-3,-4)
     #     fill in code
